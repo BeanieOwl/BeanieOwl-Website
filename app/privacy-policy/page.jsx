@@ -37,7 +37,7 @@ We may update this Privacy Policy from time to time. If we make significant chan
 
 ### Contact Us
 If you have any questions about this Privacy Policy, you can contact us at:
-- Email: support@yourapp.com
+- Email: beanieowl.dev@gmail.com
 `;
 
 export default async function Page() {
