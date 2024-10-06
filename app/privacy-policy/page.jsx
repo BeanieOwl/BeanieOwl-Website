@@ -6,7 +6,6 @@ export const metadata = {
 
 // This is where you can write your privacy policy content in Markdown format
 const privacyPolicyContent = `
-## Privacy Policy
 
 ### Introduction
 We value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and protect your data when you use our app.
