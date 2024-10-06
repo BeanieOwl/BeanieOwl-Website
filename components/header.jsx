@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import netlifyLogo from 'public/images/beanieowl_logo_100x100.png';
-import githubLogo from 'public/images/github-mark-white.svg';
 
 const navItems = [
     // { linkText: 'Home', href: '/' },
@@ -18,7 +17,7 @@ export function Header() {
             {/* Logo and Title */}
             <Link href="/" className="flex items-center gap-3">
                 <Image src={netlifyLogo} alt="Netlify logo" width={50} height={50} />
-                <span className="text-2xl font-bold">BeanieOwl</span>
+                <span className="text-2xl font-bold pt-[10%]">BeanieOwl</span>
             </Link>
 
             {/* Navigation Links */}
@@ -28,7 +27,7 @@ export function Header() {
                         <li key={index}>
                             <Link
                                 href={item.href}
-                                className="inline-block px-1.5 py-1 transition hover:opacity-80 sm:px-3 sm:py-2"
+                                className="inline-block px-1.5 py-1 no-underline hover:opacity-80 sm:px-3 sm:py-2"
                             >
                                 {item.linkText}
                             </Link>
