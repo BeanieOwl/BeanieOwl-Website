@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import netlifyLogo from 'public/images/BeanieOwl_logo.png';
+import netlifyLogo from 'public/images/beanieowl_logo_100x100.png';
 import githubLogo from 'public/images/github-mark-white.svg';
 
 const navItems = [
