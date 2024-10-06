@@ -15,9 +15,9 @@ export function Header() {
     return (
         <nav className="flex flex-wrap items-center gap-4 pt-6 pb-12 sm:pt-12 md:pb-24">
             {/* Logo and Title */}
-            <Link href="/" className="flex items-center gap-3">
+            <Link href="/" className="flex items-center gap-3 no-underline">
                 <Image src={netlifyLogo} alt="Netlify logo" width={50} height={50} />
-                <span className="text-2xl font-bold pt-[10%]">BeanieOwl</span>
+                <span className="text-2xl font-bold pt-[10%] no-underline">BeanieOwl</span>
             </Link>
 
             {/* Navigation Links */}
@@ -27,7 +27,7 @@ export function Header() {
                         <li key={index}>
                             <Link
                                 href={item.href}
-                                className="inline-block px-1.5 py-1 no-underline hover:opacity-80 sm:px-3 sm:py-2"
+                                className="inline-block px-1.5 py-1 transition hover:opacity-80 sm:px-3 sm:py-2"
                             >
                                 {item.linkText}
                             </Link>
