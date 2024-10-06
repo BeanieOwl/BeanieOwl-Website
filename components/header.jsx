@@ -5,19 +5,23 @@ import githubLogo from 'public/images/github-mark-white.svg';
 
 const navItems = [
     // { linkText: 'Home', href: '/' },
-   //  { linkText: 'Revalidation', href: '/revalidation' },
+    // { linkText: 'Revalidation', href: '/revalidation' },
     // { linkText: 'Image CDN', href: '/image-cdn' },
- //   { linkText: 'Edge Function', href: '/edge' },
-   //  { linkText: 'Blobs', href: '/blobs' },
-   // { linkText: 'Classics', href: '/classics' }
+    // { linkText: 'Edge Function', href: '/edge' },
+    // { linkText: 'Blobs', href: '/blobs' },
+    // { linkText: 'Classics', href: '/classics' }
 ];
 
 export function Header() {
     return (
         <nav className="flex flex-wrap items-center gap-4 pt-6 pb-12 sm:pt-12 md:pb-24">
-            <Link href="/">
-                <Image src={netlifyLogo} alt="Netlify logo" />
+            {/* Logo and Title */}
+            <Link href="/" className="flex items-center gap-3">
+                <Image src={netlifyLogo} alt="Netlify logo" width={50} height={50} />
+                <span className="text-2xl font-bold">BeanieOwl</span>
             </Link>
+
+            {/* Navigation Links */}
             {!!navItems?.length && (
                 <ul className="flex flex-wrap gap-x-4 gap-y-1">
                     {navItems.map((item, index) => (
