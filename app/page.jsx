@@ -39,8 +39,8 @@ export default function AboutPage() {
 
       {/* Sample Card for Placeholder */}
       <section className="flex flex-col gap-4">
-        <Card title="Random Project" text="Here's a cool project I worked on. More details coming soon!" />
-        <Card title="Another Project" text="Another one of my awesome projects." />
+        <Card title="Unreal Engine Project" text="More details coming soon" />
+        <Card title="Shopify Apps" text="Shopfiy Apps I've Created." />
       </section>
     </main>
   );
