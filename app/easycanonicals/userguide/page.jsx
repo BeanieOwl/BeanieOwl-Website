@@ -230,7 +230,7 @@ export default function Documentation() {
         <ul>
           <li>
             <strong>Inspect the Page Source:</strong> Right-click on the page and select
-            <em>View Page Source</em>. Look for the <code>&lt;link rel=&quot;canonical&quot;&gt;</code> tag
+            <em> View Page Source</em>. Look for the <code>&lt;link rel=&quot;canonical&quot;&gt;</code> tag
             in the header section. It should contain the canonical URL you specified.
           </li>
           <li>
@@ -275,7 +275,7 @@ export default function Documentation() {
         <h2>Need Help?</h2>
         <p>If you&apos;re stuck or have questions, reach out to us:</p>
         <ul>
-          <li><strong>Email:</strong> tom@ybeanieowl.com</li>
+          <li><strong>Email:</strong> tom@beanieowl.com</li>
         </ul>
       </section>
     </div>
