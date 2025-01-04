@@ -18,7 +18,7 @@ export default function Documentation() {
           results when you have similar or duplicate pages. This can improve your
           store&apos;s search rankings and make sure customers find the right pages.
         </p>
-        <p>Think of it like this:</p>
+        <p>2 Options to creating canonical links:</p>
         <ul>
           <li><strong>Exact Links:</strong> Pick a specific page to prioritize.</li>
           <li><strong>Wildcard Rules:</strong> Set one rule to handle multiple similar pages.</li>
