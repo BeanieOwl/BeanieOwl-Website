@@ -13,7 +13,7 @@ export default function Documentation() {
             <Text variant="bodyMd" as="p" style={{ marginTop: "10px" }}>
               Easy Canonicals helps you tell search engines which page to show in search
               results when you have similar or duplicate pages. This can improve your
-              store's search rankings and make sure customers find the right pages.
+              store&apos;s search rankings and make sure customers find the right pages.
             </Text>
             <Text variant="bodyMd" as="p" style={{ marginTop: "10px" }}>
               Think of it like this:
@@ -41,7 +41,7 @@ export default function Documentation() {
                   Step 1: Get Started
                 </Text>
                 <Text variant="bodyMd" as="p" style={{ marginTop: "10px" }}>
-                  When you open the app, you'll see two options:
+                  When you open the app, you&apos;ll see two options:
                 </Text>
                 <ul>
                   <li>
@@ -73,13 +73,13 @@ export default function Documentation() {
                 </Text>
                 <ol>
                   <li>
-                    Click <strong>"Create Single Canonical Link."</strong>
+                    Click <strong>&quot;Create Single Canonical Link.&quot;</strong>
                   </li>
                   <li>
                     Enter:
                     <ul>
                       <li>
-                        <strong>URL Path:</strong> The part of the URL after your store's
+                        <strong>URL Path:</strong> The part of the URL after your store&apos;s
                         domain. Example: <code>/products/blue-shirt</code>.
                       </li>
                       <li>
@@ -109,14 +109,14 @@ export default function Documentation() {
                 </Text>
                 <ol>
                   <li>
-                    Click <strong>"Create Wildcard Canonical Link."</strong>
+                    Click <strong>&quot;Create Wildcard Canonical Link.&quot;</strong>
                   </li>
                   <li>
                     Choose how to match your pages:
                     <ul>
                       <li>
                         <strong>Contains:</strong> Match all pages with a word or phrase
-                        in the URL (e.g., "summer").
+                        in the URL (e.g., &quot;summer&quot;).
                       </li>
                       <li>
                         <strong>Starts With:</strong> Match all pages starting with a
@@ -124,7 +124,7 @@ export default function Documentation() {
                       </li>
                       <li>
                         <strong>Ends With:</strong> Match all pages ending with a phrase
-                        (e.g., "-sale").
+                        (e.g., &quot;-sale&quot;).
                       </li>
                     </ul>
                   </li>
@@ -170,7 +170,7 @@ export default function Documentation() {
 
               <Box>
                 <Text variant="headingSm" as="h4">
-                  What’s the Difference Between Exact and Wildcard Links?
+                  What&apos;s the Difference Between Exact and Wildcard Links?
                 </Text>
                 <Text variant="bodyMd" as="p">
                   - <strong>Exact Links:</strong> For individual pages.
@@ -186,7 +186,7 @@ export default function Documentation() {
                   What Happens If I Mess Up?
                 </Text>
                 <Text variant="bodyMd" as="p">
-                  Don’t worry! You can always edit or delete any links you’ve added.
+                  Don&apos;t worry! You can always edit or delete any links you&apos;ve added.
                 </Text>
               </Box>
             </BlockStack>
@@ -208,7 +208,7 @@ export default function Documentation() {
                 <code>https://yourstore.com/products/blue-shirt</code>).
               </li>
               <li>
-                If you’re unsure, start with Exact Links—they’re easier!
+                If you&apos;re unsure, start with Exact Links—they&apos;re easier!
               </li>
             </ul>
           </Card>
@@ -220,7 +220,7 @@ export default function Documentation() {
               Need Help?
             </Text>
             <Text variant="bodyMd" as="p">
-              If you’re stuck or have questions, reach out to us:
+              If you&apos;re stuck or have questions, reach out to us:
             </Text>
             <ul>
               <li>
