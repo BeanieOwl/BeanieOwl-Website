@@ -121,6 +121,8 @@ export default function Documentation() {
             </ul>
           </li>
           <li>Click <strong>Save</strong>.</li>
+           <img src="/images/Wildcard_Saved_example.png" alt="Wildcard Example Highlight" style={{ maxWidth: "100%", height: "auto", margin: "10px 0" }}/>
+          <li>Click <strong>Check that your saved link appears in the table below, if it's there that means it's active and the canonical link will be in the header for the matching pages</strong>.</li>
         </ol>
       </section>
 
@@ -159,8 +161,8 @@ export default function Documentation() {
         <h2>Need Help?</h2>
         <p>If you&apos;re stuck or have questions, reach out to us:</p>
         <ul>
-          <li><strong>Email:</strong> support@yourstore.com</li>
-          <li><strong>Chat:</strong> Available in the app.</li>
+          <li><strong>Email:</strong> tom@ybeanieowl.com</li>
+
         </ul>
       </section>
     </div>
