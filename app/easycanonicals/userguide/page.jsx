@@ -66,6 +66,9 @@ export default function Documentation() {
             </ul>
           </li>
           <li>Click <strong>Save</strong>.</li>
+          <li>Click <strong>Check that your saved link appears in the table below, if it&apos;s there that means it&apos;s active and the canonical link will be in the header for the specific page path</strong>.</li>
+          <img src="/images/Single_Saved_example.png" alt="Wildcard Example Highlight" style={{ maxWidth: "100%", height: "auto", margin: "10px 0" }}/>
+
         </ol>
 
         <h3>Step 3: Managing Wildcard Links</h3>
@@ -121,8 +124,9 @@ export default function Documentation() {
             </ul>
           </li>
           <li>Click <strong>Save</strong>.</li>
-          <img src="/images/Wildcard_Saved_example.png" alt="Wildcard Example Highlight" style={{ maxWidth: "100%", height: "auto", margin: "10px 0" }}/>
           <li>Click <strong>Check that your saved link appears in the table below, if it&apos;s there that means it&apos;s active and the canonical link will be in the header for the matching pages</strong>.</li>
+          <img src="/images/Wildcard_Saved_example.png" alt="Wildcard Example Highlight" style={{ maxWidth: "100%", height: "auto", margin: "10px 0" }}/>
+          
         </ol>
       </section>
 
@@ -137,15 +141,87 @@ export default function Documentation() {
           visibility.
         </p>
 
-        <h3>What&apos;s the Difference Between Exact and Wildcard Links?</h3>
-        <p>
-          - <strong>Exact Links:</strong> For individual pages.
-          <br />- <strong>Wildcard Links:</strong> For groups of similar pages
-          (e.g., <code>/collections/summer</code>).
-        </p>
+<h3>What&apos;s the Difference Between Exact and Wildcard Links?</h3>
+<p>
+  The difference lies in how they handle your pages and when you should use them:
+</p>
+<ul>
+  <li>
+    <strong>Exact Links:</strong> Use these when you want to specify a canonical URL for a 
+    single, specific page. This is perfect for situations where two or more pages have 
+    similar or duplicate content, and you want search engines to focus on one exact URL. 
+    For example:
+    <ul>
+      <li>
+        You have two URLs pointing to the same product: 
+        <br />
+        <code>https://yourstore.com/collections/summer/products/blue-shirt</code> 
+        <br />
+        <code>https://yourstore.com/collections/sale/products/blue-shirt</code>
+      </li>
+      <li>
+        You can create an Exact Link to tell search engines to prioritize: 
+        <br />
+        <code>https://yourstore.com/products/blue-shirt</code>.
+      </li>
+    </ul>
+  </li>
+  <li>
+    <strong>Wildcard Links:</strong> Use these when you have a group of pages with a 
+    shared pattern or structure and want to set a rule for all of them. This is ideal 
+    for handling many similar pages efficiently. For example:
+    <ul>
+      <li>
+        You run seasonal collections, and all URLs start with the same pattern: 
+        <code>/collections/summer</code>.
+      </li>
+      <li>
+        Instead of setting a canonical URL for each page individually, you can create a 
+        Wildcard Link that matches all pages starting with <code>/collections/summer</code> 
+        and point them to:
+        <br />
+        <code>https://yourstore.com/collections/summer</code>.
+      </li>
+    </ul>
+  </li>
+</ul>
+<p>
+  In short:
+  <br />
+  - Use <strong>Exact Links</strong> for individual pages when precision matters. 
+  <br />
+  - Use <strong>Wildcard Links</strong> for groups of similar pages to save time and streamline management.
+</p>
+
 
         <h3>What Happens If I Mess Up?</h3>
         <p>Don&apos;t worry! You can always edit or delete any links you&apos;ve added.</p>
+
+        <h3>How do I know it&apos;s working?</h3>
+        <p>
+          You can check if your canonical links are working by using one of these methods:
+        </p>
+        <ul>
+          <li>
+            <strong>Inspect the Page Source:</strong> Right-click on the page and select 
+            <em>View Page Source</em>. Look for the <code>&lt;link rel="canonical"&gt;</code> tag 
+            in the header section. It should contain the canonical URL you specified.
+          </li>
+          <li>
+            <strong>Use Browser Developer Tools:</strong> Open your browser&apos;s developer tools 
+            (usually by pressing <code>F12</code> or <code>Ctrl+Shift+I</code>). Go to the 
+            <em>Elements</em> or <em>Network</em> tab, and check the header for the 
+            <code>&lt;link rel="canonical"&gt;</code> tag.
+          </li>
+          <li>
+            <strong>Use Online Tools:</strong> Tools like <a href="https://www.seobility.net/en/seocheck/" target="_blank" rel="noopener noreferrer">SEObility</a> can help you verify canonical tags.
+          </li>
+        </ul>
+        <p>
+          If you see the correct canonical link in these places, it means your settings are active 
+          and working.
+        </p>
+
       </section>
 
       <section style={{ marginBottom: "20px" }}>
