@@ -1,4 +1,4 @@
-import React from "react";
+
 
 export default function Documentation() {
   return (
@@ -141,57 +141,57 @@ export default function Documentation() {
           visibility.
         </p>
 
-<h3>What&apos;s the Difference Between Exact and Wildcard Links?</h3>
-<p>
-  The difference lies in how they handle your pages and when you should use them:
-</p>
-<ul>
-  <li>
-    <strong>Exact Links:</strong> Use these when you want to specify a canonical URL for a 
-    single, specific page. This is perfect for situations where two or more pages have 
-    similar or duplicate content, and you want search engines to focus on one exact URL. 
-    For example:
-    <ul>
-      <li>
-        You have two URLs pointing to the same product: 
-        <br />
-        <code>https://yourstore.com/collections/summer/products/blue-shirt</code> 
-        <br />
-        <code>https://yourstore.com/collections/sale/products/blue-shirt</code>
-      </li>
-      <li>
-        You can create an Exact Link to tell search engines to prioritize: 
-        <br />
-        <code>https://yourstore.com/products/blue-shirt</code>.
-      </li>
-    </ul>
-  </li>
-  <li>
-    <strong>Wildcard Links:</strong> Use these when you have a group of pages with a 
-    shared pattern or structure and want to set a rule for all of them. This is ideal 
-    for handling many similar pages efficiently. For example:
-    <ul>
-      <li>
-        You run seasonal collections, and all URLs start with the same pattern: 
-        <code>/collections/summer</code>.
-      </li>
-      <li>
-        Instead of setting a canonical URL for each page individually, you can create a 
-        Wildcard Link that matches all pages starting with <code>/collections/summer</code> 
-        and point them to:
-        <br />
-        <code>https://yourstore.com/collections/summer</code>.
-      </li>
-    </ul>
-  </li>
-</ul>
-<p>
-  In short:
-  <br />
-  - Use <strong>Exact Links</strong> for individual pages when precision matters. 
-  <br />
-  - Use <strong>Wildcard Links</strong> for groups of similar pages to save time and streamline management.
-</p>
+        <h3>What&apos;s the Difference Between Exact and Wildcard Links?</h3>
+        <p>
+          The difference lies in how they handle your pages and when you should use them:
+        </p>
+        <ul>
+          <li>
+            <strong>Exact Links:</strong> Use these when you want to specify a canonical URL for a 
+            single, specific page. This is perfect for situations where two or more pages have 
+            similar or duplicate content, and you want search engines to focus on one exact URL. 
+            For example:
+            <ul>
+              <li>
+                You have two URLs pointing to the same product: 
+                <br />
+                <code>https://yourstore.com/collections/summer/products/blue-shirt</code> 
+                <br />
+                <code>https://yourstore.com/collections/sale/products/blue-shirt</code>
+              </li>
+              <li>
+                You can create an Exact Link to tell search engines to prioritize: 
+                <br />
+                <code>https://yourstore.com/products/blue-shirt</code>.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Wildcard Links:</strong> Use these when you have a group of pages with a 
+            shared pattern or structure and want to set a rule for all of them. This is ideal 
+            for handling many similar pages efficiently. For example:
+            <ul>
+              <li>
+                You run seasonal collections, and all URLs start with the same pattern: 
+                <code>/collections/summer</code>.
+              </li>
+              <li>
+                Instead of setting a canonical URL for each page individually, you can create a 
+                Wildcard Link that matches all pages starting with <code>/collections/summer</code> 
+                and point them to:
+                <br />
+                <code>https://yourstore.com/collections/summer</code>.
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p>
+          In short:
+          <br />
+          - Use <strong>Exact Links</strong> for individual pages when precision matters. 
+          <br />
+          - Use <strong>Wildcard Links</strong> for groups of similar pages to save time and streamline management.
+        </p>
 
 
         <h3>What Happens If I Mess Up?</h3>
