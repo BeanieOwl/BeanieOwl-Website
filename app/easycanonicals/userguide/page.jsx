@@ -51,11 +51,7 @@ export default function Documentation() {
         <p><strong>How To Add a Link:</strong></p>
         <ol>
           <li>Click <strong>&quot;Create Single Canonical Link.&quot;</strong></li>
-           <img 
-    src="/images/Wildcard_Highlight.png" 
-    alt="Wildcard Example Highlight" 
-    style={{ maxWidth: "100%", height: "auto", margin: "10px 0" }} 
-  />
+           <img src="/images/SingleLink_Highlight.png" alt="Wildcard Example Highlight" style={{ maxWidth: "100%", height: "auto", margin: "10px 0" }}/>
           <li>
             Enter:
             <ul>
@@ -94,6 +90,7 @@ export default function Documentation() {
         <p><strong>How To Add a Wildcard Link:</strong></p>
         <ol>
           <li>Click <strong>&quot;Create Wildcard Canonical Link.&quot;</strong></li>
+          <img src="/images/Wildcard_Highlight.png" alt="Wildcard Example Highlight" style={{ maxWidth: "100%", height: "auto", margin: "10px 0" }}/>
           <li>
             Choose how to match your pages:
             <ul>
