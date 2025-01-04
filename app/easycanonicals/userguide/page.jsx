@@ -1,11 +1,9 @@
-
-
 export default function Documentation() {
   return (
-    <div style={{ padding: "20px", fontFamily: "Arial, sans-serif", lineHeight: "1.6" }}>
+    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif', lineHeight: '1.6' }}>
       <h1>Easy Canonicals: User Guide</h1>
 
-      <section style={{ marginBottom: "20px" }}>
+      <section style={{ marginBottom: '20px' }}>
         <h2>What Does This Do?</h2>
         <p>
           Easy Canonicals helps you tell search engines which page to show in search
@@ -19,7 +17,7 @@ export default function Documentation() {
         </ul>
       </section>
 
-      <section style={{ marginBottom: "20px" }}>
+      <section style={{ marginBottom: '20px' }}>
         <h2>How Do I Use This?</h2>
 
         <h3>Step 1: Get Started</h3>
@@ -40,7 +38,7 @@ export default function Documentation() {
           </li>
           <li>For example, you have a product available in two categories:</li>
         </ul>
-        <p style={{ fontStyle: "italic" }}>
+        <p style={{ fontStyle: 'italic' }}>
           Example: <br />
           URL 1: <code>https://yourstore.com/collections/summer/products/blue-shirt</code> <br />
           URL 2: <code>https://yourstore.com/collections/sale/products/blue-shirt</code> <br />
@@ -51,7 +49,11 @@ export default function Documentation() {
         <p><strong>How To Add a Link:</strong></p>
         <ol>
           <li>Click <strong>&quot;Create Single Canonical Link.&quot;</strong></li>
-          <img src="/images/SingleLink_Highlight.png" alt="Wildcard Example Highlight" style={{ maxWidth: "100%", height: "auto", margin: "10px 0" }}/>
+          <img
+            src="/images/SingleLink_Highlight.png"
+            alt="Wildcard Example Highlight"
+            style={{ maxWidth: '100%', height: 'auto', margin: '10px 0' }}
+          />
           <li>
             Enter:
             <ul>
@@ -66,9 +68,18 @@ export default function Documentation() {
             </ul>
           </li>
           <li>Click <strong>Save</strong>.</li>
-          <li>Click <strong>Check that your saved link appears in the table below, if it&apos;s there that means it&apos;s active and the canonical link will be in the header for the specific page path</strong>.</li>
-          <img src="/images/Single_Saved_example.png" alt="Wildcard Example Highlight" style={{ maxWidth: "100%", height: "auto", margin: "10px 0" }}/>
-
+          <li>
+            <strong>
+              Check that your saved link appears in the table below; if it&apos;s there, that
+              means it&apos;s active and the canonical link will be in the header for the
+              specific page path.
+            </strong>
+          </li>
+          <img
+            src="/images/Single_Saved_example.png"
+            alt="Wildcard Example Highlight"
+            style={{ maxWidth: '100%', height: 'auto', margin: '10px 0' }}
+          />
         </ol>
 
         <h3>Step 3: Managing Wildcard Links</h3>
@@ -82,9 +93,11 @@ export default function Documentation() {
             When multiple pages share a common structure or pattern, and you want search
             engines to prioritize one primary URL.
           </li>
-          <li>For example, you run seasonal collections and want to point them to a single page:</li>
+          <li>
+            For example, you run seasonal collections and want to point them to a single page:
+          </li>
         </ul>
-        <p style={{ fontStyle: "italic" }}>
+        <p style={{ fontStyle: 'italic' }}>
           Example: <br />
           Match all pages starting with: <code>/collections/summer</code>. <br />
           Prioritize the canonical URL: <code>https://yourstore.com/collections/summer</code>.
@@ -93,7 +106,11 @@ export default function Documentation() {
         <p><strong>How To Add a Wildcard Link:</strong></p>
         <ol>
           <li>Click <strong>&quot;Create Wildcard Canonical Link.&quot;</strong></li>
-          <img src="/images/Wildcard_Highlight.png" alt="Wildcard Example Highlight" style={{ maxWidth: "100%", height: "auto", margin: "10px 0" }}/>
+          <img
+            src="/images/Wildcard_Highlight.png"
+            alt="Wildcard Example Highlight"
+            style={{ maxWidth: '100%', height: 'auto', margin: '10px 0' }}
+          />
           <li>
             Choose how to match your pages:
             <ul>
@@ -124,13 +141,22 @@ export default function Documentation() {
             </ul>
           </li>
           <li>Click <strong>Save</strong>.</li>
-          <li>Click <strong>Check that your saved link appears in the table below, if it&apos;s there that means it&apos;s active and the canonical link will be in the header for the matching pages</strong>.</li>
-          <img src="/images/Wildcard_Saved_example.png" alt="Wildcard Example Highlight" style={{ maxWidth: "100%", height: "auto", margin: "10px 0" }}/>
-          
+          <li>
+            <strong>
+              Check that your saved link appears in the table below; if it&apos;s there, that
+              means it&apos;s active and the canonical link will be in the header for the
+              matching pages.
+            </strong>
+          </li>
+          <img
+            src="/images/Wildcard_Saved_example.png"
+            alt="Wildcard Example Highlight"
+            style={{ maxWidth: '100%', height: 'auto', margin: '10px 0' }}
+          />
         </ol>
       </section>
 
-      <section style={{ marginBottom: "20px" }}>
+      <section style={{ marginBottom: '20px' }}>
         <h2>FAQs</h2>
 
         <h3>Why Should I Use This?</h3>
@@ -147,37 +173,37 @@ export default function Documentation() {
         </p>
         <ul>
           <li>
-            <strong>Exact Links:</strong> Use these when you want to specify a canonical URL for a 
-            single, specific page. This is perfect for situations where two or more pages have 
-            similar or duplicate content, and you want search engines to focus on one exact URL. 
+            <strong>Exact Links:</strong> Use these when you want to specify a canonical URL for a
+            single, specific page. This is perfect for situations where two or more pages have
+            similar or duplicate content, and you want search engines to focus on one exact URL.
             For example:
             <ul>
               <li>
-                You have two URLs pointing to the same product: 
+                You have two URLs pointing to the same product:
                 <br />
-                <code>https://yourstore.com/collections/summer/products/blue-shirt</code> 
+                <code>https://yourstore.com/collections/summer/products/blue-shirt</code>
                 <br />
                 <code>https://yourstore.com/collections/sale/products/blue-shirt</code>
               </li>
               <li>
-                You can create an Exact Link to tell search engines to prioritize: 
+                You can create an Exact Link to tell search engines to prioritize:
                 <br />
                 <code>https://yourstore.com/products/blue-shirt</code>.
               </li>
             </ul>
           </li>
           <li>
-            <strong>Wildcard Links:</strong> Use these when you have a group of pages with a 
-            shared pattern or structure and want to set a rule for all of them. This is ideal 
+            <strong>Wildcard Links:</strong> Use these when you have a group of pages with a
+            shared pattern or structure and want to set a rule for all of them. This is ideal
             for handling many similar pages efficiently. For example:
             <ul>
               <li>
-                You run seasonal collections, and all URLs start with the same pattern: 
+                You run seasonal collections, and all URLs start with the same pattern:
                 <code>/collections/summer</code>.
               </li>
               <li>
-                Instead of setting a canonical URL for each page individually, you can create a 
-                Wildcard Link that matches all pages starting with <code>/collections/summer</code> 
+                Instead of setting a canonical URL for each page individually, you can create a
+                Wildcard Link that matches all pages starting with <code>/collections/summer</code>
                 and point them to:
                 <br />
                 <code>https://yourstore.com/collections/summer</code>.
@@ -188,11 +214,11 @@ export default function Documentation() {
         <p>
           In short:
           <br />
-          - Use <strong>Exact Links</strong> for individual pages when precision matters. 
+          - Use <strong>Exact Links</strong> for individual pages when precision matters.
           <br />
-          - Use <strong>Wildcard Links</strong> for groups of similar pages to save time and streamline management.
+          - Use <strong>Wildcard Links</strong> for groups of similar pages to save time and
+          streamline management.
         </p>
-
 
         <h3>What Happens If I Mess Up?</h3>
         <p>Don&apos;t worry! You can always edit or delete any links you&apos;ve added.</p>
@@ -203,32 +229,44 @@ export default function Documentation() {
         </p>
         <ul>
           <li>
-            <strong>Inspect the Page Source:</strong> Right-click on the page and select 
-            <em>View Page Source</em>. Look for the <code>&lt;link rel="canonical"&gt;</code> tag 
+            <strong>Inspect the Page Source:</strong> Right-click on the page and select
+            <em>View Page Source</em>. Look for the <code>&lt;link rel=&quot;canonical&quot;&gt;</code> tag
             in the header section. It should contain the canonical URL you specified.
           </li>
           <li>
-            <strong>Use Browser Developer Tools:</strong> Open your browser&apos;s developer tools 
-            (usually by pressing <code>F12</code> or <code>Ctrl+Shift+I</code>). Go to the 
-            <em>Elements</em> or <em>Network</em> tab, and check the header for the 
-            <code>&lt;link rel="canonical"&gt;</code> tag.
+            <strong>Use Browser Developer Tools:</strong> Open your browser&apos;s developer
+            tools (usually by pressing <code>F12</code> or <code>Ctrl+Shift+I</code>). Go to the
+            <em>Elements</em> or <em>Network</em> tab, and check the header for the
+            <code>&lt;link rel=&quot;canonical&quot;&gt;</code> tag.
           </li>
           <li>
-            <strong>Use Online Tools:</strong> Tools like <a href="https://www.seobility.net/en/seocheck/" target="_blank" rel="noopener noreferrer">SEObility</a> can help you verify canonical tags.
+            <strong>Use Online Tools:</strong> Tools like{' '}
+            <a
+              href="https://www.seobility.net/en/seocheck/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              SEObility
+            </a>{' '}
+            can help you verify canonical tags.
           </li>
         </ul>
         <p>
-          If you see the correct canonical link in these places, it means your settings are active 
+          If you see the correct canonical link in these places, it means your settings are active
           and working.
         </p>
-
       </section>
 
-      <section style={{ marginBottom: "20px" }}>
+      <section style={{ marginBottom: '20px' }}>
         <h2>Quick Tips</h2>
         <ul>
-          <li>Make sure the <strong>URL Path</strong> starts with <code>/</code> (like <code>/products/blue-shirt</code>).</li>
-          <li>The <strong>Canonical URL</strong> must be a full link (like <code>https://yourstore.com/products/blue-shirt</code>).</li>
+          <li>
+            Make sure the <strong>URL Path</strong> starts with <code>/</code> (like <code>/products/blue-shirt</code>).
+          </li>
+          <li>
+            The <strong>Canonical URL</strong> must be a full link (like{' '}
+            <code>https://yourstore.com/products/blue-shirt</code>).
+          </li>
           <li>If you&apos;re unsure, start with Exact Links—they&apos;re easier!</li>
         </ul>
       </section>
