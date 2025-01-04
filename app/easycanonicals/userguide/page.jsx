@@ -6,6 +6,14 @@ export default function Documentation() {
       <section style={{ marginBottom: '20px' }}>
         <h2>What Does This Do?</h2>
         <p>
+          When multiple URLs lead to similar or duplicate content, Google isn&apos;t always sure 
+          which page to display in search results. This confusion can dilute your SEO efforts by 
+          splitting ranking signals across multiple pages and cause search engines to crawl the 
+          same information more than necessary. Easy Canonicals solves this problem by letting 
+          you pick the single page you want to prioritize, consolidating your SEO value and 
+          ensuring customers find the correct page in search results.
+        </p>
+        <p>
           Easy Canonicals helps you tell search engines which page to show in search
           results when you have similar or duplicate pages. This can improve your
           store&apos;s search rankings and make sure customers find the right pages.
