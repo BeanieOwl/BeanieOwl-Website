@@ -51,7 +51,7 @@ export default function Documentation() {
         <p><strong>How To Add a Link:</strong></p>
         <ol>
           <li>Click <strong>&quot;Create Single Canonical Link.&quot;</strong></li>
-           <img src="/images/SingleLink_Highlight.png" alt="Wildcard Example Highlight" style={{ maxWidth: "100%", height: "auto", margin: "10px 0" }}/>
+          <img src="/images/SingleLink_Highlight.png" alt="Wildcard Example Highlight" style={{ maxWidth: "100%", height: "auto", margin: "10px 0" }}/>
           <li>
             Enter:
             <ul>
@@ -121,8 +121,8 @@ export default function Documentation() {
             </ul>
           </li>
           <li>Click <strong>Save</strong>.</li>
-           <img src="/images/Wildcard_Saved_example.png" alt="Wildcard Example Highlight" style={{ maxWidth: "100%", height: "auto", margin: "10px 0" }}/>
-          <li>Click <strong>Check that your saved link appears in the table below, if it's there that means it's active and the canonical link will be in the header for the matching pages</strong>.</li>
+          <img src="/images/Wildcard_Saved_example.png" alt="Wildcard Example Highlight" style={{ maxWidth: "100%", height: "auto", margin: "10px 0" }}/>
+          <li>Click <strong>Check that your saved link appears in the table below, if it&apos;s there that means it&apos;s active and the canonical link will be in the header for the matching pages</strong>.</li>
         </ol>
       </section>
 
@@ -162,7 +162,6 @@ export default function Documentation() {
         <p>If you&apos;re stuck or have questions, reach out to us:</p>
         <ul>
           <li><strong>Email:</strong> tom@ybeanieowl.com</li>
-
         </ul>
       </section>
     </div>
