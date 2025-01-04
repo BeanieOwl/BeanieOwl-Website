@@ -32,6 +32,22 @@ export default function Documentation() {
 
         <h3>Step 2: Managing Exact Links</h3>
         <p>Use this if you want to tell search engines to prioritize one specific page over another.</p>
+        <p><strong>When to Use:</strong></p>
+        <ul>
+          <li>
+            When two or more pages on your site have the same or similar content, and you
+            want search engines to focus on one specific page.
+          </li>
+          <li>For example, you have a product available in two categories:</li>
+        </ul>
+        <p style={{ fontStyle: "italic" }}>
+          Example: <br />
+          URL 1: <code>https://yourstore.com/collections/summer/products/blue-shirt</code> <br />
+          URL 2: <code>https://yourstore.com/collections/sale/products/blue-shirt</code> <br />
+          Use an Exact Link to tell search engines to prioritize: <br />
+          <code>https://yourstore.com/products/blue-shirt</code>.
+        </p>
+
         <p><strong>How To Add a Link:</strong></p>
         <ol>
           <li>Click <strong>&quot;Create Single Canonical Link.&quot;</strong></li>
@@ -40,7 +56,7 @@ export default function Documentation() {
             <ul>
               <li>
                 <strong>URL Path:</strong> The part of the URL after your store&apos;s domain.
-                Example: <code>/products/blue-shirt</code>.
+                Example: <code>/collections/summer/products/blue-shirt</code>.
               </li>
               <li>
                 <strong>Canonical URL:</strong> The full URL of the page you want search
@@ -56,6 +72,20 @@ export default function Documentation() {
           Use this when you have many similar pages (like <code>/collections/summer</code>)
           and want to set one rule for all of them.
         </p>
+        <p><strong>When to Use:</strong></p>
+        <ul>
+          <li>
+            When multiple pages share a common structure or pattern, and you want search
+            engines to prioritize one primary URL.
+          </li>
+          <li>For example, you run seasonal collections and want to point them to a single page:</li>
+        </ul>
+        <p style={{ fontStyle: "italic" }}>
+          Example: <br />
+          Match all pages starting with: <code>/collections/summer</code>. <br />
+          Prioritize the canonical URL: <code>https://yourstore.com/collections/summer</code>.
+        </p>
+
         <p><strong>How To Add a Wildcard Link:</strong></p>
         <ol>
           <li>Click <strong>&quot;Create Wildcard Canonical Link.&quot;</strong></li>
