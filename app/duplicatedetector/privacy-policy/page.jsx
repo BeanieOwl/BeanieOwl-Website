@@ -1,4 +1,5 @@
-import { Markdown } from '../../../components/markdown';
+import { Markdown } from '../../../../components/markdown';
+
 
 export const metadata = {
     title: 'Privacy Policy for Duplicate Detector Links'
