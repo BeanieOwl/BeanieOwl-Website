@@ -3,6 +3,20 @@ export default function Documentation() {
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif', lineHeight: '1.6' }}>
       <h1>Easy Canonicals: User Guide</h1>
 
+      {/* Warning Section */}
+      <div
+        style={{
+          border: '1px solid #f5c6cb',
+          backgroundColor: '#f8d7da',
+          color: '#721c24',
+          padding: '15px',
+          borderRadius: '5px',
+          marginBottom: '20px',
+        }}
+      >
+        <strong>Warning:</strong> When managing wildcard links, it's easy to inadvertently harm your SEO by applying blanket rules (e.g., using <code>contains "/collections"</code>). Please use wildcard management carefully to avoid unintended consequences.
+      </div>
+
       <section style={{ marginBottom: '20px' }}>
         <h2>What Does This Do?</h2>
         <p>
@@ -228,10 +242,23 @@ export default function Documentation() {
           streamline management.
         </p>
 
+        <h3>How Do We Find Duplicate Content?</h3>
+        <p>
+          To identify duplicate content on your store, we recommend using the{' '}
+          <a
+            href="https://apps.shopify.com/duplicate-detector?search_id=4ad45cab-06f9-44cc-a495-35ff1375bbfe&surface_detail=duplicate+detector&surface_inter_position=1&surface_intra_position=6&surface_type=search"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Duplicate Detector
+          </a>{' '}
+          Shopify app. It helps you scan your store for duplicate pages, allowing you to manage them effectively with Easy Canonicals.
+        </p>
+
         <h3>What Happens If I Mess Up?</h3>
         <p>Don&apos;t worry! You can always edit or delete any links you&apos;ve added.</p>
 
-        <h3>How do I know it&apos;s working?</h3>
+        <h3>How Do I Know It&apos;s Working?</h3>
         <p>
           You can check if your canonical links are working by using one of these methods:
         </p>
