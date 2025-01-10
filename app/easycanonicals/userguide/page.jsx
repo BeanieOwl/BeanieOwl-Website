@@ -14,7 +14,7 @@ export default function Documentation() {
           marginBottom: '20px',
         }}
       >
-        <strong>Warning:</strong> When managing wildcard links, it's easy to inadvertently harm your SEO by applying blanket rules (e.g., using <code>contains "/collections"</code>). Please use wildcard management carefully to avoid unintended consequences.
+        <strong>Warning:</strong> When managing wildcard links, it&apos;s easy to inadvertently harm your SEO by applying blanket rules (e.g., using <code>contains &quot;/collections&quot;</code>). Please use wildcard management carefully to avoid unintended consequences.
       </div>
 
       <section style={{ marginBottom: '20px' }}>
