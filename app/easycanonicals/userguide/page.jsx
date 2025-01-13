@@ -53,7 +53,7 @@ export default function Documentation() {
 
         <h3>How Does the App Manage Canonical Tags?</h3>
         <p>
-          Shopify doesn&apos;t allow developers to directly modify HTTP headers, which is one way to set canonical tags (e.g., <code>Link: &lt;URL&gt;; rel="canonical"</code>). Instead, our app overrides Shopify&apos;s default self-referencing canonical tags by injecting the correct canonical tags directly into the HTML <code>&lt;head&gt;</code> section of your pages.
+          Shopify doesn&apos;t allow developers to directly modify HTTP headers, which is one way to set canonical tags (e.g., <code>Link: &lt;URL&gt;; rel=&quot;canonical&quot;</code>). Instead, our app overrides Shopify&apos;s default self-referencing canonical tags by injecting the correct canonical tags directly into the HTML <code>&lt;head&gt;</code> section of your pages.
         </p>
         <p>
           This method is fully compatible with Shopify’s platform and provides the same SEO benefits as setting canonical tags via HTTP headers. By managing canonical tags within the HTML, we ensure that search engines accurately recognize your preferred URLs without compromising your store&apos;s performance.
