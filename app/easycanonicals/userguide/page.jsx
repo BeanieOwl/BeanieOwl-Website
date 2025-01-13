@@ -39,6 +39,27 @@ export default function Documentation() {
         </ul>
       </section>
 
+      {/* New Section: Performance and Canonical Tag Management */}
+      <section style={{ marginBottom: '20px' }}>
+        <h2>Performance and Canonical Tag Management</h2>
+
+        <h3>Does the Script Slow Down My Website?</h3>
+        <p>
+          Great question! Our app uses a lightweight script that loads asynchronously. This means it doesn&apos;t block the main thread or delay your page from rendering while it fetches and applies canonical links. As a result, it won&apos;t impact your store&apos;s loading speed or your customers&apos; browsing experience.
+        </p>
+        <p>
+          Additionally, the script is optimized to perform only necessary operations, ensuring that your website remains fast and responsive.
+        </p>
+
+        <h3>How Does the App Manage Canonical Tags?</h3>
+        <p>
+          Shopify doesn&apos;t allow developers to directly modify HTTP headers, which is one way to set canonical tags (e.g., <code>Link: &lt;URL&gt;; rel="canonical"</code>). Instead, our app overrides Shopify&apos;s default self-referencing canonical tags by injecting the correct canonical tags directly into the HTML <code>&lt;head&gt;</code> section of your pages.
+        </p>
+        <p>
+          This method is fully compatible with Shopify’s platform and provides the same SEO benefits as setting canonical tags via HTTP headers. By managing canonical tags within the HTML, we ensure that search engines accurately recognize your preferred URLs without compromising your store&apos;s performance.
+        </p>
+      </section>
+
       <section style={{ marginBottom: '20px' }}>
         <h2>How Do I Use This?</h2>
 
