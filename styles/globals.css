@@ -5,90 +5,110 @@
 @tailwind utilities;
 
 @layer base {
-    body {
-        @apply font-sans bg-gray-50 text-gray-800;
-    }
+  body {
+    @apply font-sans bg-gray-50 text-gray-800;
+  }
 
-    h1, h2, h3 {
-        @apply font-extrabold tracking-tight;
-    }
+  h1, h2, h3 {
+    @apply font-extrabold tracking-tight;
+  }
 
-    h1 {
-        @apply text-4xl md:text-5xl lg:text-6xl leading-tight mb-8;
-    }
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl leading-tight mb-8;
+  }
 
-    h2 {
-        @apply text-3xl md:text-4xl leading-snug mb-6;
-    }
+  h2 {
+    @apply text-3xl md:text-4xl leading-snug mb-6;
+  }
 
-    h3 {
-        @apply text-2xl md:text-3xl leading-snug mb-5;
-    }
+  h3 {
+    @apply text-2xl md:text-3xl leading-snug mb-5;
+  }
 
-    /* White text for p tags */
-    p {
-        @apply mb-5 text-lg leading-relaxed text-white;
-    }
+  /* Corrected paragraph styling for visibility and professionalism */
+  p {
+    @apply mb-5 text-lg leading-relaxed text-gray-700; /* Was text-white */
+  }
 
-    a {
-        @apply underline; /* Restoring the original underline style */
-    }
+  a {
+    /* Added default link colors and hover/focus states */
+    @apply underline text-blue-600 hover:text-blue-800
+           focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-1 rounded; /* Added rounded for better focus ring appearance */
+  }
 
-    code {
-        @apply px-1.5 py-0.5 rounded bg-gray-900 text-yellow-200 font-mono text-sm;
-    }
+  code {
+    @apply px-1.5 py-0.5 rounded bg-gray-900 text-yellow-200 font-mono text-sm;
+  }
 
-    pre {
-        @apply bg-gray-900 text-gray-100 p-4 rounded-md overflow-x-auto;
-    }
+  pre {
+    @apply bg-gray-900 text-gray-100 p-4 rounded-md overflow-x-auto;
+  }
 
-    .markdown {
-        @apply mb-6;
-    }
+  .markdown {
+    @apply mb-6;
+  }
 
-    blockquote {
-        @apply border-l-4 border-blue-600 pl-4 italic text-gray-600;
-    }
+  blockquote {
+    @apply border-l-4 border-blue-600 pl-4 italic text-gray-600;
+  }
 
-    ul {
-        @apply list-disc pl-5;
-    }
+  ul {
+    @apply list-disc pl-5;
+  }
 
-    ol {
-        @apply list-decimal pl-5;
-    }
+  ol {
+    @apply list-decimal pl-5;
+  }
 
-    li {
-        @apply mb-2 text-lg;
-    }
+  li {
+    @apply mb-2 text-lg; /* Will inherit text color appropriately now */
+  }
 
-    img {
-        @apply rounded-lg shadow-lg max-w-full h-auto mt-5;
-    }
+  img {
+    @apply rounded-lg shadow-lg max-w-full h-auto mt-5;
+  }
 }
 
 /* Alert styles */
 .alert {
-    @apply bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4;
+  /* Added rounded-md for consistency */
+  @apply bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4 rounded-md;
 }
 
-.alert .markdown {
-    @apply mb-0 text-sm;
+/* Ensure paragraphs directly inside alerts use alert's text color and appropriate styling */
+.alert p {
+  @apply text-blue-700 text-sm mb-0; /* Adjusted for alert context */
 }
+
+/* Styles for markdown content specifically within alerts */
+.alert .markdown {
+  @apply mb-0 text-sm; /* This targets the .markdown container */
+}
+
+.alert .markdown p { /* If p tags are directly within .markdown inside .alert */
+    @apply text-blue-700; /* Ensures p in markdown also uses alert text color */
+}
+
 
 /* Buttons */
 .btn {
-    @apply inline-flex items-center justify-center px-5 py-3 font-semibold text-white bg-blue-600 rounded-md shadow-lg hover:bg-blue-700 transition duration-200 ease-in-out;
+  @apply inline-flex items-center justify-center px-5 py-3 font-semibold text-white bg-blue-600 rounded-md shadow-lg
+         hover:bg-blue-700
+         focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 /* Adjusted focus ring color for default blue button */
+         transition duration-200 ease-in-out;
 }
 
 .btn-primary {
-    @apply bg-indigo-600 hover:bg-indigo-700;
+  @apply bg-indigo-600 hover:bg-indigo-700
+         focus:ring-indigo-400; /* Specific focus ring for primary */
 }
 
 .btn-secondary {
-    @apply bg-gray-600 hover:bg-gray-700;
+  @apply bg-gray-600 hover:bg-gray-700
+         focus:ring-gray-400; /* Specific focus ring for secondary */
 }
 
 .btn:disabled {
-    @apply text-neutral-400 bg-neutral-700 cursor-not-allowed;
+  /* Improved contrast and appearance for disabled state */
+  @apply bg-neutral-700 text-neutral-200 cursor-not-allowed shadow-none;
 }
