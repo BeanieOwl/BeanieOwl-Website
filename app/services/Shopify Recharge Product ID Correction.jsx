@@ -78,7 +78,7 @@ export default function ShopifyRechargeFixPage() {
               <p style={styles.paragraph}>
                 During a store migration or a significant product catalog
                 overhaul (e.g., using import/export tools that might regenerate IDs),
-                this fix ensures your existing Recharge subscriptions don't fail en masse.
+                this fix ensures your existing Recharge subscriptions don$apos;t fail en masse.
               </p>
             </div>
             <div style={styles.useCaseCard}>
