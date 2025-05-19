@@ -124,15 +124,11 @@ export default function ShopifyRechargeFixPage() {
             implement this automated solution for your Shopify and Recharge
             setup.
           </p>
-          {/* Example Call to Action - Link to a contact page or Calendly */}
+
           <Link href="/contact" legacyBehavior>
             <a style={styles.ctaButton}>Get in Touch for a Consultation</a>
           </Link>
-          {/* Or, if you have a direct purchase/setup process:
-          <Link href="/checkout/shopify-recharge-fix" legacyBehavior>
-            <a style={styles.ctaButton}>Implement Fix Now</a>
-          </Link>
-          */}
+
         </section>
 
         <footer style={styles.footer}>
