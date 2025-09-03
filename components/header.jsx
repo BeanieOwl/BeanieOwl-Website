@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import netlifyLogo from 'public/images/beanieowl_logo_100x100.png';
+import netlifyLogo from '/public/assets/beanieowl_logo_100x100.png';
 
 const navItems = [
     // { linkText: 'Home', href: '/' },
@@ -13,28 +13,17 @@ const navItems = [
 
 export function Header() {
     return (
-        <nav className="flex flex-wrap items-center gap-4 pt-6 pb-12 sm:pt-12 md:pb-24">
-            {/* Logo and Title */}
-            <Link href="/" className="flex items-center gap-3 no-underline">
-                <Image src={netlifyLogo} alt="Netlify logo" width={50} height={50} />
-                <span className="text-2xl font-bold pt-[10%] no-underline">BeanieOwl</span>
-            </Link>
+        <nav className="flex items-center justify-between w-full">
+            <div className="logo">
+                <Link href="/" className="flex items-center gap-3 no-underline">
+                    <Image src={netlifyLogo} alt="BeanieOwl logo" width={48} height={48} />
+                    <span>BeanieOwl</span>
+                </Link>
+            </div>
 
-            {/* Navigation Links */}
-            {!!navItems?.length && (
-                <ul className="flex flex-wrap gap-x-4 gap-y-1">
-                    {navItems.map((item, index) => (
-                        <li key={index}>
-                            <Link
-                                href={item.href}
-                                className="inline-block px-1.5 py-1 transition hover:opacity-80 sm:px-3 sm:py-2"
-                            >
-                                {item.linkText}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-            )}
+            <div className="hidden md:flex items-center gap-4">
+                {/* Future nav items */}
+            </div>
         </nav>
     );
 }

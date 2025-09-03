@@ -93,7 +93,7 @@ export default function Documentation() {
         <ol>
           <li>Click <strong>&quot;Create Single Canonical Link.&quot;</strong></li>
           <img
-            src="/images/SingleLink_Highlight.png"
+            src="/assets/SingleLink_Highlight.png"
             alt="Wildcard Example Highlight"
             style={{ maxWidth: '100%', height: 'auto', margin: '10px 0' }}
           />
@@ -119,7 +119,7 @@ export default function Documentation() {
             </strong>
           </li>
           <img
-            src="/images/Single_Saved_example.png"
+            src="/assets/Single_Saved_example.png"
             alt="Wildcard Example Highlight"
             style={{ maxWidth: '100%', height: 'auto', margin: '10px 0' }}
           />
@@ -150,7 +150,7 @@ export default function Documentation() {
         <ol>
           <li>Click <strong>&quot;Create Wildcard Canonical Link.&quot;</strong></li>
           <img
-            src="/images/Wildcard_Highlight.png"
+            src="/assets/Wildcard_Highlight.png"
             alt="Wildcard Example Highlight"
             style={{ maxWidth: '100%', height: 'auto', margin: '10px 0' }}
           />
@@ -192,7 +192,7 @@ export default function Documentation() {
             </strong>
           </li>
           <img
-            src="/images/Wildcard_Saved_example.png"
+            src="/assets/Wildcard_Saved_example.png"
             alt="Wildcard Example Highlight"
             style={{ maxWidth: '100%', height: 'auto', margin: '10px 0' }}
           />
