@@ -1,1 +1,3 @@
 // ...existing code from app/page.jsx...
+
+export default function PlaceholderPage(){return null;}

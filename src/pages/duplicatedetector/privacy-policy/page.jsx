@@ -1,1 +1,3 @@
 // ...existing code from app/duplicatedetector/privacy-policy/page.jsx...
+
+export default function DuplicateDetectorPrivacy(){return null;}

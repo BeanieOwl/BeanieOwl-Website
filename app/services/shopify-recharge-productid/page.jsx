@@ -1,138 +1,209 @@
-// pages/services/shopify-recharge-fix.js
+import Link from 'next/link';
+import Script from 'next/script';
 
-import Head from 'next/head';
-import Link from 'next/link'; // If you want to link to a contact page, for example
+export const metadata = {
+  title: 'Fix Recharge &#39;Unable to find variant&#39; (Shopify Variant ID) | BeanieOwl',
+  description:
+  'Troubleshoot and fix Recharge–Shopify subscription failures from variant_id mismatches. We detect issues and update subscriptions so renewals keep processing—no busywork for your team.',
+  keywords: [
+    'Recharge',
+    'Shopify',
+    'variant ID',
+    'variant_id',
+    'subscription',
+    'Recharge integration',
+    'Shopify subscriptions',
+    'Recharge error',
+    'Unable to find variant',
+    'Product ID',
+    'Autoship',
+    'variant ID mismatch',
+    'subscription renewal failed',
+  ],
+  alternates: { canonical: 'https://beanieowl.com/services/shopify-recharge-productid' },
+  openGraph: {
+    title: 'Fix Recharge &#39;Unable to find variant&#39; (Shopify Variant ID) | BeanieOwl',
+    description:
+      'Resolve Recharge subscription failures from Shopify variant_id mismatches. Automated SKU → variant mapping keeps renewals flowing and prevents churn.',
+    url: 'https://beanieowl.com/services/shopify-recharge-productid',
+    siteName: 'BeanieOwl',
+    type: 'website',
+  },
+};
 
 export default function ShopifyRechargeFixPage() {
+  const serviceLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'Recharge + Shopify Variant ID Subscription Fix',
+    provider: { '@type': 'Organization', name: 'BeanieOwl', url: 'https://beanieowl.com' },
+    areaServed: 'Worldwide',
+    description:
+      'Automated detection and repair of Recharge subscription failures caused by Shopify variant_id changes. We reconcile variant references and update subscriptions to stop \'Unable to find variant\' errors.',
+    url: 'https://beanieowl.com/services/shopify-recharge-productid',
+    category: 'Ecommerce Integration',
+  };
+
+  const faqLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Why are my Recharge subscriptions failing after product or variant changes in Shopify?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text:
+            'When products or variants are duplicated, recreated, or migrated, their variant_id can change. Recharge references the stored variant_id; if it no longer exists, renewals fail.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do you fix the variant ID mismatch?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text:
+            'We monitor for failures, reconcile the correct product variant, and update the affected Recharge subscription automatically—no manual intervention required.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Will this work during catalog migrations or bulk edits?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text:
+            'Yes. The system scales to bulk changes—if variant IDs shift during migration or bulk edits, we remap subscriptions to the new IDs using SKUs.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do you support Product ID and Variant ID mismatches?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text:
+            'Yes. We primarily target variant_id, but can also correct related product ID references tied to the subscription line items.',
+        },
+      },
+    ],
+  };
+
   return (
     <>
-      <Head>
-        <title>Shopify-Recharge Product ID Fix | Your Company Name</title>
-        <meta
-          name="description"
-          content="Resolve Shopify product ID changes affecting your Recharge autoship subscriptions automatically."
-        />
-      </Head>
+      <Script id="ld-service" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLd) }} />
+      <Script id="ld-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
 
       <div style={styles.container}>
         <header style={styles.header}>
-          <h1 style={styles.mainHeading}>Shopify-Recharge Product ID Fix</h1>
+          <h1 style={styles.mainHeading}>Fix Recharge &#39;Unable to find variant&#39; — Shopify Variant ID Subscription Errors</h1>
           <p style={styles.subHeading}>
-            Keep Your Autoship Subscriptions Running Smoothly
+            Stop failed renewals from variant_id mismatches. Keep autoships flowing.
           </p>
         </header>
 
         <section style={styles.section}>
-          <h2 style={styles.sectionHeading}>The Problem: Broken Autoships</h2>
+          <h2 style={styles.sectionHeading}>The Problem: Shopify Variant ID Mismatches Break Recharge Renewals</h2>
           <p style={styles.paragraph}>
-            If you use Shopify and Recharge for your subscriptions, you might
-            have encountered a frustrating issue: when a product or its
-            variants are updated or recreated in Shopify, the underlying
-            Product ID can change.
+            In Shopify&nbsp;+&nbsp;Recharge setups, subscriptions store a specific <strong>variant_id</strong>.
+            When products or variants are duplicated, recreated, merged, or migrated, those IDs can change.
+            Recharge can&#39;t find the expected variant and renewals fail.
           </p>
-          <p style={styles.paragraph}>
-            Recharge relies on this specific Product ID for its autoship
-            orders. When it changes, Recharge can no longer find the correct
-            product, leading to:
-          </p>
+          <p style={styles.paragraph}>Common symptoms include:</p>
           <ul style={styles.list}>
-            <li>Failed subscription orders</li>
-            <li>Customer complaints and confusion</li>
-            <li>Manual, time-consuming fixes</li>
-            <li>Potential loss of recurring revenue</li>
+            <li>Recharge error messages like &quot;Unable to find variant&quot; or missing <code>variant_id</code></li>
+            <li>Failed or paused subscription renewals after catalog changes</li>
+            <li>Manual scrambling to match SKUs to the new variant IDs</li>
+            <li>Lost revenue, churn, and support pain</li>
           </ul>
         </section>
 
         <section style={styles.section}>
-          <h2 style={styles.sectionHeading}>Our Solution: Automated ID Sync</h2>
+          <h2 style={styles.sectionHeading}>Our Solution: Automated Fix for Variant ID Mismatches</h2>
           <p style={styles.paragraph}>
-            Our service provides an automated fix for this misalignment. We
-            implement a system that:
+            We implement automated guardrails that keep subscriptions healthy when IDs shift:
           </p>
           <ol style={styles.list}>
-            <li>Monitors your Recharge subscriptions for errors related to incorrect Product IDs.</li>
-            <li>When an error is detected, it uses the product SKU (which remains consistent) to look up the correct, current Product ID in Shopify.</li>
-            <li>Automatically updates the Recharge subscription with the new, correct Product ID.</li>
+            <li>Detect subscription failures tied to missing or invalid variant references.</li>
+            <li>Resolve the correct, current product variant context.</li>
+            <li>Update the affected subscription so future renewals succeed.</li>
           </ol>
           <p style={styles.paragraph}>
-            This ensures your autoship orders continue to process correctly,
-            saving you time, reducing customer churn, and protecting your
-            revenue.
+            The result: renewals process, customers stay subscribed, and your team avoids tedious manual fixes.
           </p>
         </section>
 
         <section style={styles.section}>
-          <h2 style={styles.sectionHeading}>Use Cases & Who Benefits</h2>
+          <h2 style={styles.sectionHeading}>FAQs: Fixing Recharge Variant ID Subscription Problems</h2>
+          <div>
+            <h3 style={styles.useCaseTitle}>Why are my Recharge subscriptions failing with &quot;Unable to find variant&quot;?</h3>
+            <p style={styles.paragraph}>
+              When a product or variant changes in Shopify, its <code>variant_id</code> may change. Recharge keeps the old ID
+              on the subscription, can&#39;t find that variant, and the renewal fails.
+            </p>
+            <h3 style={styles.useCaseTitle}>How do you fix a variant_id mismatch?</h3>
+            <p style={styles.paragraph}>
+              We use automated checks to reconcile the correct product variant and update the subscription so it matches the
+              current catalog—no manual steps required on your side.
+            </p>
+            <h3 style={styles.useCaseTitle}>Will this work during catalog migrations or bulk edits?</h3>
+            <p style={styles.paragraph}>
+              Yes. During migrations or large edits, variant IDs often shift. Our automation handles large changes with guardrails
+              to update safely at scale.
+            </p>
+          </div>
+        </section>
+
+        <section style={styles.section}>
+          <h2 style={styles.sectionHeading}>Who Benefits</h2>
           <div style={styles.useCasesGrid}>
             <div style={styles.useCaseCard}>
-              <h3 style={styles.useCaseTitle}>Merchants with Frequently Updated Products</h3>
+              <h3 style={styles.useCaseTitle}>Frequent Product/Variant Updates</h3>
               <p style={styles.paragraph}>
-                If you regularly update product details, bundle products, or
-                manage a large catalog where variants might be recreated, this
-                service prevents those changes from breaking active
-                subscriptions.
+                Regular edits, duplications, or variant rebuilds can rotate IDs. We keep subscriptions aligned.
               </p>
             </div>
             <div style={styles.useCaseCard}>
-              <h3 style={styles.useCaseTitle}>Stores Migrating or Restructuring Shopify Data</h3>
+              <h3 style={styles.useCaseTitle}>Migrations and Bulk Catalog Changes</h3>
               <p style={styles.paragraph}>
-                During a store migration or a significant product catalog
-                overhaul (e.g., using import/export tools that might regenerate IDs),
-                this fix ensures your existing Recharge subscriptions don$apos;t fail en masse.
+                During replatforming or bulk edits, variant IDs often change. We remap automatically using SKUs.
               </p>
             </div>
             <div style={styles.useCaseCard}>
-              <h3 style={styles.useCaseTitle}>Subscription Box Businesses</h3>
+              <h3 style={styles.useCaseTitle}>Bundle and Build‑a‑Box Workflows</h3>
               <p style={styles.paragraph}>
-                If your subscription box contents change regularly and you
-                sometimes need to create new product entries or variants in Shopify
-                for those items, this ensures the correct items are pulled into
-                Recharge orders.
+                Bundle apps may create new variants. We ensure the right variant flows into Recharge orders.
               </p>
             </div>
             <div style={styles.useCaseCard}>
-              <h3 style={styles.useCaseTitle}>Businesses Aiming to Reduce Manual Admin</h3>
+              <h3 style={styles.useCaseTitle}>High‑Volume Subscription Stores</h3>
               <p style={styles.paragraph}>
-                If your team spends valuable time manually identifying and
-                correcting these Product ID errors in Recharge, our automated
-                solution frees up that time for more strategic tasks.
-              </p>
-            </div>
-            <div style={styles.useCaseCard}>
-              <h3 style={styles.useCaseTitle}>High-Volume Subscription Stores</h3>
-              <p style={styles.paragraph}>
-                The more subscriptions you have, the greater the impact of
-                Product ID errors. Our automated fix scales with your business,
-                minimizing disruptions for a large customer base.
-              </p>
-            </div>
-             <div style={styles.useCaseCard}>
-              <h3 style={styles.useCaseTitle}>Anyone Using Product Bundling Apps</h3>
-              <p style={styles.paragraph}>
-                If you use apps that create bundle products, these sometimes result in new product IDs.
-                Our service can help ensure that if these bundled items are part of a subscription,
-                the link to Recharge remains intact even if the underlying product IDs change.
+                At scale, small ID drifts create big problems. Automation prevents churn and support load.
               </p>
             </div>
           </div>
         </section>
 
         <section style={styles.section}>
-          <h2 style={styles.sectionHeading}>Ready to Fix Your Autoships?</h2>
+          <h2 style={styles.sectionHeading}>Implementation Options</h2>
+          <ul style={styles.list}>
+            <li>Alert‑only mode: Flag issues and email a report for review.</li>
+            <li>Auto‑repair: Detect and fix in near‑real‑time to prevent failed renewals.</li>
+            <li>Safety rails: Scope to specific products/collections, rate‑limit updates, full audit logs.</li>
+          </ul>
+        </section>
+
+        <section style={styles.section}>
+          <h2 style={styles.sectionHeading}>Next Steps</h2>
           <p style={styles.paragraph}>
-            Stop worrying about broken subscriptions and lost revenue. Let us
-            implement this automated solution for your Shopify and Recharge
-            setup.
+            Let&#39;s review your Recharge‑Shopify setup and stop variant ID failures before they hit your revenue.
           </p>
-
-          <Link href="/contact" legacyBehavior>
-            <a style={styles.ctaButton}>Get in Touch for a Consultation</a>
-          </Link>
-
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            <Link href="/contact" style={styles.ctaButton}>Talk to BeanieOwl</Link>
+            <Link href="/services" style={{ ...styles.ctaButton, backgroundColor: '#6366f1' }}>More Services</Link>
+          </div>
         </section>
 
         <footer style={styles.footer}>
-          <p>&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} BeanieOwl. All rights reserved.</p>
         </footer>
       </div>
     </>
@@ -147,37 +218,37 @@ const styles = {
     padding: '20px',
     fontFamily: 'Arial, sans-serif',
     lineHeight: '1.6',
-    color: '#333',
+    color: '#e5e7eb',
   },
   header: {
     textAlign: 'center',
     marginBottom: '40px',
     paddingBottom: '20px',
-    borderBottom: '1px solid #eee',
+    borderBottom: '1px solid #2a2f3a',
   },
   mainHeading: {
     fontSize: '2.5rem',
-    color: '#2c3e50',
+    color: '#ffffff',
     marginBottom: '0.5rem',
   },
   subHeading: {
     fontSize: '1.2rem',
-    color: '#7f8c8d',
+    color: '#a3a3a3',
   },
   section: {
     marginBottom: '40px',
   },
   sectionHeading: {
     fontSize: '1.8rem',
-    color: '#34495e',
+    color: '#ffffff',
     marginBottom: '15px',
     paddingBottom: '10px',
-    borderBottom: '1px solid #ecf0f1',
+    borderBottom: '1px solid #2a2f3a',
   },
   paragraph: {
     fontSize: '1rem',
     marginBottom: '15px',
-    color: '#555',
+    color: '#d1d5db',
   },
   list: {
     marginLeft: '20px',
@@ -189,19 +260,19 @@ const styles = {
     gap: '20px',
   },
   useCaseCard: {
-    border: '1px solid #ddd',
+    border: '1px solid #2a2f3a',
     padding: '20px',
     borderRadius: '8px',
-    backgroundColor: '#f9f9f9',
+    backgroundColor: '#0f172a',
   },
   useCaseTitle: {
     fontSize: '1.2rem',
-    color: '#2980b9',
+    color: '#60a5fa',
     marginBottom: '10px',
   },
   ctaButton: {
     display: 'inline-block',
-    backgroundColor: '#3498db',
+    backgroundColor: '#22c55e',
     color: 'white',
     padding: '12px 25px',
     textDecoration: 'none',
@@ -211,16 +282,12 @@ const styles = {
     marginTop: '10px',
     transition: 'background-color 0.3s ease',
   },
-  // Add hover style for button if not using a CSS solution that handles it
-  // ctaButtonHover: { // You'd need to manage this with state in React for inline styles or use CSS
-  //   backgroundColor: '#2980b9',
-  // },
   footer: {
     textAlign: 'center',
     marginTop: '50px',
     paddingTop: '20px',
-    borderTop: '1px solid #eee',
+    borderTop: '1px solid #2a2f3a',
     fontSize: '0.9rem',
-    color: '#7f8c8d',
+    color: '#9ca3af',
   },
 };

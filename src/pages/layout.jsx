@@ -1,1 +1,3 @@
 // ...existing code from app/layout.jsx...
+
+export default function LayoutPage(){return null;}

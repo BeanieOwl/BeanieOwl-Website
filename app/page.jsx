@@ -4,8 +4,8 @@ import { Markdown } from '../components/markdown';
 const aboutMeText = `
 ## Welcome!
 
-Hi, I'm a developer who enjoys working on cool projects. 
-I'm passionate about JavaScript, React, and making things work seamlessly.
+Hi, I\'m a developer who enjoys working on cool projects. 
+I\'m passionate about JavaScript, React, and making things work seamlessly.
 `;
 
 export default function AboutPage() {
@@ -15,7 +15,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 items-center">
           <div>
             <h1 className="hero-title">Welcome!</h1>
-            <p className="hero-sub">Hi, I'm a developer who enjoys working on cool projects. I'm passionate about JavaScript, React, and making things work seamlessly.</p>
+            <p className="hero-sub">Hi, I&apos;m a developer who enjoys working on cool projects. I&apos;m passionate about JavaScript, React, and making things work seamlessly.</p>
             <div className="mt-6">
               <a className="btn btn-primary" href="#">Get in touch</a>
             </div>

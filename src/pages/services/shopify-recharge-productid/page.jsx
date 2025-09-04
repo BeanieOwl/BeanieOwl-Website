@@ -1,1 +1,3 @@
 // ...existing code from app/services/shopify-recharge-productid/page.jsx...
+
+export default function ShopifyRechargeProductId(){return null;}

@@ -3,6 +3,9 @@ import { Footer } from '../components/footer';
 import { Header } from '../components/header';
 
 export const metadata = {
+  verification: {
+  google: 'oeD9QDaCP90daaFp_gF6m9kd0L5gvyZ11u5X9Fihg4o',
+  },
     title: {
         template: '%s | Netlify',
         default: 'BeanieOwl Dev'
@@ -11,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-      <html lang="en" data-theme="lofi">
+  <html lang="en" data-theme="business">
         <head>
           <link rel="icon" href="/assets/Favicon.png" sizes="any" />
         </head>
