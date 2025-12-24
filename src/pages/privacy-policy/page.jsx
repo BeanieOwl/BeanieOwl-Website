@@ -1,3 +1,0 @@
-// ...existing code from app/privacy-policy/page.jsx...
-
-export default function PrivacyPolicy(){return null;}

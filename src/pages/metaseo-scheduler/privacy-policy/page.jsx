@@ -1,3 +1,0 @@
-// ...existing code from app/metaseo-scheduler/privacy-policy/page.jsx...
-
-export default function MetaSeoSchedulerPrivacy(){return null;}

@@ -1,3 +1,0 @@
-// ...existing code from app/easycanonicals/userguide/page.jsx...
-
-export default function EasyCanonicalsUserGuide(){return null;}
